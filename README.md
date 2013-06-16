@@ -1,4 +1,0 @@
-DihedralPCA
-===========
-
-PCA on dihedrals
