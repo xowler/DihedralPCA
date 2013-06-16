@@ -1,12 +1,12 @@
 .PHONY: all clean
 
-all: do
-	./do test/folded.gro test/test.xtc prefix
+all: dihedralPCA	
+	./dihedralPCA prefix test/rama.xvg
 
-do: do.cc
-	g++ do.cc -I ../deps/xtc/install/ -o do -L ../deps/xtc/install -lccxtc_x86_64
+dihedralPCA: dihedralPCA.cc
+	g++ dihedralPCA.cc -I ../deps/ezOptionParser/ -o dihedralPCA
 
-do.cc:
+dihedralPCA.cc:
 
 clean:
-	-rm do
+	-rm dihedralPCA

@@ -1,7 +1,14 @@
 DhedralPCA
 ===========
 
-Performs PCA on dihedrals after translating the origin of each to the position with the smallest population. Uses the Eigen template library for calculation of the eigensystem of the covariance matrix.
+Performs PCA on dihedrals after translating the origin of each to the position with the smallest population. 
+
+Dependecies
+-------------
+
+* Uses the Eigen template library for calculation of the eigensystem of the covariance matrix. (should be in deps/eigen)
+* Uses ezOptionParser to ... parse options easily. (should be in deps/ezOptionParser)
+
 
 
 
